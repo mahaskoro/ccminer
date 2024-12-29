@@ -21,7 +21,9 @@ Langkah 2 - Pasang Paket yang diperlukan
 Pasang paket-paket yang diperlukan dan jangan lupa apdet dulu.
 
 apt-get update
+
 atau,
+
 yes | pkg update && pkg upgrade -y
 
 Pasang paket-paket yang diperlukan
@@ -96,3 +98,12 @@ wget https://raw.githubusercontent.com/mahaskoro/ccminer/sets/config.json
 
 dan coba jalankan ccminer :
 ~/ccminer/start.sh
+
+BONUS :
+Atur agar ketika booting termux dipanggil dan langsung menjalankan ccminer :
+
+cd && cd && cd && nano ../usr/etc/bash.bashrc
+
+Salin perintah ini kebaris paling bawah;
+
+cd ccminer/&&./start.sh
